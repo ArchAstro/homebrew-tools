@@ -1,7 +1,7 @@
 class Archagent < Formula
   desc "ArchAstro agent platform CLI (org mode)"
   homepage "https://github.com/ArchAstro/archastro-cli"
-  version "0.16.0"
+  version "0.17.0"
   license "MIT"
 
   livecheck do
@@ -11,25 +11,25 @@ class Archagent < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.16.0/archagent-darwin-arm64.tar.gz"
-      sha256 "f88629b303fde25faae97cc6790984cdad51bf2bcb74e2f4176f00eff31070e5"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.17.0/archagent-darwin-arm64.tar.gz"
+      sha256 "1da2a21e69a2a46b7fdcc6c6e6587afc66c9451e22eba04220be19a76a21cdcc"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.16.0/archagent-darwin-x64.tar.gz"
-      sha256 "c2908d33151512f03399473dc98c07b8fb0862836b8746db93abee4d8c6a94bc"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.17.0/archagent-darwin-x64.tar.gz"
+      sha256 "3fbadc1b5d28fc9eb945ba0c96e4e22c48861b4e2f2dc9cefecf55e0c1fb16cf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.16.0/archagent-linux-arm64.tar.gz"
-      sha256 "4dbd6890be6f9269b29be509c71b08454f13a4005ccb4447faf77190e0ec5ec7"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.17.0/archagent-linux-arm64.tar.gz"
+      sha256 "3961c4b0506e59612cd2069ad95d1ac3ac8d415461ee122c6a49161d1e0fdb1e"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.16.0/archagent-linux-x64.tar.gz"
-      sha256 "40eb269611234a7a22bd19755617c7ef4952375ddb4609b563768fa50002b1ae"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.17.0/archagent-linux-x64.tar.gz"
+      sha256 "fefbd8cbf0f6a676688f84d8ec628492207f9390216e85476d65b282fd75990b"
     end
   end
 
