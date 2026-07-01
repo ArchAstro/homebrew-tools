@@ -1,7 +1,7 @@
 class Archastro < Formula
   desc "ArchAstro developer platform CLI"
   homepage "https://github.com/ArchAstro/archastro-cli"
-  version "0.47.0"
+  version "0.47.1"
   license "MIT"
 
   livecheck do
@@ -11,25 +11,25 @@ class Archastro < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.47.0/archastro-darwin-arm64.tar.gz"
-      sha256 "43649e41ce446b7c8b524a5c3e4885ea59731b34bcf3e03517498907651521ad"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.47.1/archastro-darwin-arm64.tar.gz"
+      sha256 "c417a8e983513dba5cf98d297a33531fd0b3dfaf33237952729fb0b553047e72"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.47.0/archastro-darwin-x64.tar.gz"
-      sha256 "503bc0b4fc2680fcf0d3f271e6b2338e723e3ccd5e66cf58d72945e0530393f6"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.47.1/archastro-darwin-x64.tar.gz"
+      sha256 "d8abb22bdc2245583d90965dcf71df24a947d81e810c862178b2b6628f635871"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.47.0/archastro-linux-arm64.tar.gz"
-      sha256 "77f91a7632234a542b496570c44dc70b7a794fa87ac60e32ec282a2df6dc71ba"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.47.1/archastro-linux-arm64.tar.gz"
+      sha256 "e66f92cc68b644efab73d355f947343cb3a32a89a4a7fe683d93bbe38c17e38b"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.47.0/archastro-linux-x64.tar.gz"
-      sha256 "5c9d1d8586f8f5b92268357938a959a884db439644afbe576158fb7de7f102dd"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.47.1/archastro-linux-x64.tar.gz"
+      sha256 "a9eac745ab9f31385f2a7f5405d7fcc39beb9084cfe0709dc6e92a5793a74804"
     end
   end
 
