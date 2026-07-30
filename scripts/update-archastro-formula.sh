@@ -24,7 +24,7 @@ fi
 cat >"$FORMULA_PATH" <<EOF
 class Archastro < Formula
   desc "ArchAstro developer platform CLI"
-  homepage "https://github.com/ArchAstro/archastro-cli"
+  homepage "https://github.com/ArchAstro/archastro"
   version "${VERSION#v}"
   license "MIT"
 
@@ -35,24 +35,24 @@ class Archastro < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/${VERSION_TAG}/archastro-darwin-arm64.tar.gz"
+      url "https://github.com/ArchAstro/archastro/releases/download/${VERSION_TAG}/archastro-darwin-arm64.tar.gz"
       sha256 "${DARWIN_ARM64_SHA}"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/${VERSION_TAG}/archastro-darwin-x64.tar.gz"
+      url "https://github.com/ArchAstro/archastro/releases/download/${VERSION_TAG}/archastro-darwin-x64.tar.gz"
       sha256 "${DARWIN_X64_SHA}"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/${VERSION_TAG}/archastro-linux-arm64.tar.gz"
+      url "https://github.com/ArchAstro/archastro/releases/download/${VERSION_TAG}/archastro-linux-arm64.tar.gz"
       sha256 "${LINUX_ARM64_SHA}"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/${VERSION_TAG}/archastro-linux-x64.tar.gz"
+      url "https://github.com/ArchAstro/archastro/releases/download/${VERSION_TAG}/archastro-linux-x64.tar.gz"
       sha256 "${LINUX_X64_SHA}"
     end
   end
