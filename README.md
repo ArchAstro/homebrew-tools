@@ -1,8 +1,6 @@
 # Homebrew Tools
 
-Public Homebrew tap for ArchAstro tools.
-
-The first public formula in this repo is `archastro`, which installs the ArchAstro CLI from public GitHub release assets in `ArchAstro/archastro-cli`.
+Public Homebrew tap for ArchAstro command-line tools.
 
 ## Install
 
@@ -10,16 +8,28 @@ The first public formula in this repo is `archastro`, which installs the ArchAst
 brew install ArchAstro/tools/archastro
 ```
 
-## Current State
+Scopey will be available after its first GitHub release:
 
-This tap is scaffolded before the first public CLI release. The formula in `Formula/archastro.rb` is intentionally a release template and must be updated with the real release version and checksums before publishing.
+```bash
+brew install ArchAstro/tools/scopey
+```
 
 ## Release Update Flow
 
-After a new `archastro` release is published:
+After publishing an `archastro` or `scopey` GitHub release:
 
-1. update `Formula/archastro.rb` with the new version and checksums
-2. commit and push this repo
-3. verify with `brew install ArchAstro/tools/archastro`
+1. Download or copy the four SHA-256 values from the release's
+   `checksums.txt`.
+2. Run the matching helper in `scripts/` with the version followed by the
+   Darwin ARM64, Darwin x64, Linux ARM64, and Linux x64 checksums.
+3. Review the generated formula, open a pull request, and wait for validation.
+4. After merging, verify a clean install and run the formula's version test.
 
-The helper script in `scripts/update-archastro-formula.sh` renders the formula with release values.
+For example:
+
+```bash
+scripts/update-scopey-formula.sh 0.1.0 \
+  <darwin-arm64-sha> <darwin-x64-sha> <linux-arm64-sha> <linux-x64-sha>
+brew install ArchAstro/tools/scopey
+brew test scopey
+```

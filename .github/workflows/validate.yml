@@ -12,10 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Validate formula syntax
-        run: ruby -c Formula/archastro.rb
+        run: |
+          for formula in Formula/*.rb; do
+            ruby -c "$formula"
+          done
 
-      - name: Validate update script
-        run: bash -n scripts/update-archastro-formula.sh
+      - name: Validate update scripts
+        run: |
+          for script in scripts/*.sh; do
+            bash -n "$script"
+          done
