@@ -16,7 +16,12 @@ brew install ArchAstro/tools/scopey
 
 ## Release Update Flow
 
-After publishing an `archastro` or `scopey` GitHub release:
+The Scopey release workflow automatically runs the formula updater and pushes
+the resulting version commit to this tap. `ARCHASTRO_RELEASE_GITHUB_TOKEN` must
+belong to an actor allowed to bypass the tap's pull-request rule, as in the
+ArchAstro CLI release workflow.
+
+For a manual release update or recovery:
 
 1. Download or copy the four SHA-256 values from the release's
    `checksums.txt`.
