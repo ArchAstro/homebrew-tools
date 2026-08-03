@@ -1,7 +1,7 @@
 class Scopey < Formula
   desc "Keep coding-agent sessions aligned with the current scope"
   homepage "https://github.com/ArchAstro/scopey"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   livecheck do
@@ -11,25 +11,25 @@ class Scopey < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/scopey/releases/download/v0.1.2/scopey-darwin-arm64.tar.gz"
-      sha256 "3297847afe7cd5ea9bdc994a050288cac15a19323c0a81b096a4f1380eae5628"
+      url "https://github.com/ArchAstro/scopey/releases/download/v0.1.3/scopey-darwin-arm64.tar.gz"
+      sha256 "85c5a09e0b16c70e79378090ebeb1f9778c8182a8c8d8e74859646c792c1a17d"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/scopey/releases/download/v0.1.2/scopey-darwin-x64.tar.gz"
-      sha256 "1ee154d06020f0af0cb6fc51f19a81ebd53ddb01a6f38abe6061542cccc8b415"
+      url "https://github.com/ArchAstro/scopey/releases/download/v0.1.3/scopey-darwin-x64.tar.gz"
+      sha256 "3bb301020c98015951c3bf4e64e9fbd6395ed665be49fcf06fb9c088bf03c40c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/scopey/releases/download/v0.1.2/scopey-linux-arm64.tar.gz"
-      sha256 "4d4daf7119d678425e6ac4bc201d58ada8968cf0eac2f73165d25370c49f4f69"
+      url "https://github.com/ArchAstro/scopey/releases/download/v0.1.3/scopey-linux-arm64.tar.gz"
+      sha256 "3bbd644093b477ac1a1af6f462428c43fb60daaa2fe430736f32f00f4e0a5883"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/scopey/releases/download/v0.1.2/scopey-linux-x64.tar.gz"
-      sha256 "28bf7ca99bb9427b6b468efb5a288152eadf27eab7611786c74413b5a95a6fc1"
+      url "https://github.com/ArchAstro/scopey/releases/download/v0.1.3/scopey-linux-x64.tar.gz"
+      sha256 "bebb6f77aa4bcc7e4138ca53b3451b3332dcc679a3a073bdcd2612b1e5e926c2"
     end
   end
 
