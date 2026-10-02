@@ -1,7 +1,7 @@
 class Archdev < Formula
   desc "CLI for building and running with ArchDev"
   homepage "https://github.com/ArchAstro/archdev"
-  version "0.48.4"
+  version "0.48.5"
   license :cannot_represent
 
   livecheck do
@@ -11,23 +11,23 @@ class Archdev < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.4/archdev-darwin-arm64.tar.gz"
-      sha256 "9dc0da2a4c6050f8d6f40d52d9a8ca66eaf85a10add1d30f8e0528685cb87871"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.5/archdev-darwin-arm64.tar.gz"
+      sha256 "b98a880623194ad187a7bd8d0847641fc55cf5d6094fd68c28f404eafdb895ce"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.4/archdev-darwin-x64.tar.gz"
-      sha256 "e82cf92e557bfc3877388c5c69b69f068a02b24d4e99643e4511534d6f78e138"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.5/archdev-darwin-x64.tar.gz"
+      sha256 "3d58a62625cc56bb3476f29ca827a45743a0ec8f688ff3cc2b62437340e6a5e2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.4/archdev-linux-arm64.tar.gz"
-      sha256 "44383bd023d5b17a1298d93f77e0b7ac6523858473072d44cb26efcd71d9429d"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.5/archdev-linux-arm64.tar.gz"
+      sha256 "725b48a8662b3061cd4774682b054c533637b0d604d1e817f7eaabd51404f23d"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.4/archdev-linux-x64.tar.gz"
-      sha256 "109c2991c752c6e11743e12b6142e10c9c886d02d008b143ceefaecf72b75737"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.5/archdev-linux-x64.tar.gz"
+      sha256 "5de5cf826f4af57e3f60405dc82c16007860a32724a8a6ba60a86ba9fbdb448c"
     end
   end
 
