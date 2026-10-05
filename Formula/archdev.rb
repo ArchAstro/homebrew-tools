@@ -1,7 +1,7 @@
 class Archdev < Formula
   desc "CLI for building and running with ArchDev"
   homepage "https://github.com/ArchAstro/archdev"
-  version "0.48.9"
+  version "0.49.0"
   license :cannot_represent
 
   livecheck do
@@ -11,23 +11,23 @@ class Archdev < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.9/archdev-darwin-arm64.tar.gz"
-      sha256 "49e170526ca5106708a41cdc9b7665d625a4db7892b96e566c28f0f8ba54c834"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.49.0/archdev-darwin-arm64.tar.gz"
+      sha256 "9a7b473675212078477d484d0c4e43264d09713dd24aa63db5d108655e841e0a"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.9/archdev-darwin-x64.tar.gz"
-      sha256 "8870cabd5caa5b6db107575df3eed5f6b73c529e60acf90ed4b57b0fabc1ab36"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.49.0/archdev-darwin-x64.tar.gz"
+      sha256 "32d5a0eb834226194b078d4033615502210d214df4c98e0f8fbcc1e8094ae066"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.9/archdev-linux-arm64.tar.gz"
-      sha256 "7c3928c456df7be2a8ea5da5061970d77bc225f5c7766098d1c7718de09fb9b8"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.49.0/archdev-linux-arm64.tar.gz"
+      sha256 "60b720d4f52e8e6a3343e5664e7680ff1c2c76c978688bcbda664c1e799c3232"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.48.9/archdev-linux-x64.tar.gz"
-      sha256 "adbf1bb0980b8c0a26457fe59a2b142ed24c01a10efc3603e2018061be099f5d"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.49.0/archdev-linux-x64.tar.gz"
+      sha256 "ba92fbe38c384a4e7e22a53ca2312c4164e46dc3099ce9c4fa21a9393895859b"
     end
   end
 
@@ -37,9 +37,16 @@ class Archdev < Formula
 
   def caveats
     <<~CAVEATS
+      archdev is the Rust build of the ArchDev CLI. Earlier releases shipped
+      the TypeScript build under this name; it is now the archdev-old
+      formula (`brew install archdev-old`, binary archdev-old). Both share
+      ~/.archdev (settings, sign-in, and the local daemon service).
+      A daemon started by an earlier build restarts onto this binary the next
+      time you run an archdev command that changes state, or at once with
+      `archdev jobs runner start` (which interrupts running jobs). A busy daemon
+      does not drain and restart itself yet.
       Run `archdev daemon uninstall` before `brew uninstall archdev` to stop
-      the local daemon and remove its service. If you skip it, the daemon
-      unregisters itself within about ten minutes of the binary being removed.
+      the local daemon and remove its service.
     CAVEATS
   end
 
