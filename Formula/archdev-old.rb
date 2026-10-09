@@ -1,7 +1,7 @@
 class ArchdevOld < Formula
   desc "TypeScript build of the ArchDev CLI (previously the archdev formula)"
   homepage "https://github.com/ArchAstro/archdev"
-  version "0.50.2"
+  version "0.50.3"
   license :cannot_represent
 
   livecheck do
@@ -12,23 +12,23 @@ class ArchdevOld < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/archdev-old-v0.50.2/archdev-old-darwin-arm64.tar.gz"
-      sha256 "960bc7a96a3cfe68678715bede25dadc32e500fb34a4d5a551d2ea9788b2e2bb"
+      url "https://github.com/ArchAstro/archdev/releases/download/archdev-old-v0.50.3/archdev-old-darwin-arm64.tar.gz"
+      sha256 "7307fda45c4d9ac920f2d19ee4269bac79b0dc5f0e4aaafdc787de80ad94ca1e"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/archdev-old-v0.50.2/archdev-old-darwin-x64.tar.gz"
-      sha256 "c89a770596ccda3144d15f3ee57d79ce3d019f0f08b38c0f0ed0cafd79e6aad7"
+      url "https://github.com/ArchAstro/archdev/releases/download/archdev-old-v0.50.3/archdev-old-darwin-x64.tar.gz"
+      sha256 "4c19bf5c192cc167823a465df4b0472b0ce30e7c95d1a8c9c245d4fc014dbfd0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/archdev-old-v0.50.2/archdev-old-linux-arm64.tar.gz"
-      sha256 "d1307cc7a6de148ec7e239e6b3324087b6c48411ae8c87e9cb976f0abfcf61f6"
+      url "https://github.com/ArchAstro/archdev/releases/download/archdev-old-v0.50.3/archdev-old-linux-arm64.tar.gz"
+      sha256 "bcd25fa5ecc9e1d7872486c1c6c0c087f4d26858a950885097cd88c62d1dd5c4"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/archdev-old-v0.50.2/archdev-old-linux-x64.tar.gz"
-      sha256 "de8de03477c047b5388c7a1b0515d56489e770c8e5698c1c2856e083b6bc4e7e"
+      url "https://github.com/ArchAstro/archdev/releases/download/archdev-old-v0.50.3/archdev-old-linux-x64.tar.gz"
+      sha256 "faf773a2366aea2e28caf57491a2b814f1b3531411913be17c639e1e73d27bfd"
     end
   end
 
