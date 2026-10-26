@@ -1,7 +1,7 @@
 class Archdev < Formula
   desc "CLI for building and running with ArchDev"
   homepage "https://github.com/ArchAstro/archdev"
-  version "0.55.3"
+  version "0.55.5"
   license :cannot_represent
 
   livecheck do
@@ -11,23 +11,23 @@ class Archdev < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.55.3/archdev-darwin-arm64.tar.gz"
-      sha256 "16c39238617726e549b7e03b6830770385c02608603429931b38ad3d50926d2e"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.55.5/archdev-darwin-arm64.tar.gz"
+      sha256 "9f2e87af6d4026563b6b3b942cedd63f7b289ffc1134a376b285adb14ddf966b"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.55.3/archdev-darwin-x64.tar.gz"
-      sha256 "e6046afc88c14e3624c10d25f91fe5d86c3fd396bd5892a379e35731e457d1ef"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.55.5/archdev-darwin-x64.tar.gz"
+      sha256 "12c24a5f3c18861bafaad2050152aabb5f0615a1aa4c102d9f1506b78c068a35"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.55.3/archdev-linux-arm64.tar.gz"
-      sha256 "815b76b94aa356190b090b27573b30b792fd1d4a513c251d50300ee0d500500d"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.55.5/archdev-linux-arm64.tar.gz"
+      sha256 "78d0ca4b9490dcb6269619af6f7817b97d50b4b6865d7f93803987524ed988ee"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.55.3/archdev-linux-x64.tar.gz"
-      sha256 "9e1f331cab8dd459a719c77fc953164c918c7dfa13c87dbb12d3cf5e16952adf"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.55.5/archdev-linux-x64.tar.gz"
+      sha256 "654f392d73952dc3a34f148e784b2196825d2385457e62df5f79dd98bf1e7f65"
     end
   end
 
@@ -46,6 +46,9 @@ class Archdev < Formula
       does not drain and restart itself yet.
       Run `archdev daemon uninstall` before `brew uninstall archdev` to stop
       the local daemon and remove its service.
+      The first archdev command you run in a terminal also installs bash and
+      fish tab completion under ~/.local/share, where shells not installed by
+      Homebrew look for it. `archdev completion install` does this on demand.
     CAVEATS
   end
 
