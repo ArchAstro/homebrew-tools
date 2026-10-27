@@ -1,7 +1,7 @@
 class Aster < Formula
   desc "Build orchestration for polyglot monorepos"
   homepage "https://github.com/ArchAstro/aster"
-  version "0.24.1"
+  version "0.24.2"
   license "MIT"
 
   livecheck do
@@ -11,19 +11,19 @@ class Aster < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/aster/releases/download/v0.24.1/aster-darwin-arm64.tar.gz"
-      sha256 "f57020098af73e848bd8c56a476454b0396d0732e07e0044061ffa80f178fd98"
+      url "https://github.com/ArchAstro/aster/releases/download/v0.24.2/aster-darwin-arm64.tar.gz"
+      sha256 "4196bea093f07b2cc834c146a65d9dbd123cd3e4099c456ad43ce01cadda7300"
     end
     on_intel do
-      url "https://github.com/ArchAstro/aster/releases/download/v0.24.1/aster-darwin-x64.tar.gz"
-      sha256 "ed6d71cf182ad5620d362a08f87ad153d5aa395bd7328f44d780b71344f9c670"
+      url "https://github.com/ArchAstro/aster/releases/download/v0.24.2/aster-darwin-x64.tar.gz"
+      sha256 "a8871bbdb40179e7cad46d9f98ab225ed973375012aaa2adc084df8cb139b5b0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ArchAstro/aster/releases/download/v0.24.1/aster-linux-x64.tar.gz"
-      sha256 "a7dc4ac7131e8e2ff523b411059c7ca780195c8bb40a6dd2bc9c33b485eb5ef5"
+      url "https://github.com/ArchAstro/aster/releases/download/v0.24.2/aster-linux-x64.tar.gz"
+      sha256 "9d8f6ae39642e0f966ea4d4db52ac72ba9346b0a93a10c9dcc2bbe333eed636d"
     end
   end
 
