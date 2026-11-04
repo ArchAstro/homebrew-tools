@@ -59,6 +59,7 @@ class Archagent < Formula
 
   def install
     bin.install "archagent"
+    doc.install "THIRD_PARTY_NOTICES.md" if File.exist?("THIRD_PARTY_NOTICES.md")
     generate_completions_from_executable(bin/"archagent", "completion")
   end
 

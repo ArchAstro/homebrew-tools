@@ -59,6 +59,7 @@ class Archastro < Formula
 
   def install
     bin.install "archastro"
+    doc.install "THIRD_PARTY_NOTICES.md" if File.exist?("THIRD_PARTY_NOTICES.md")
     generate_completions_from_executable(bin/"archastro", "completion")
   end
 
