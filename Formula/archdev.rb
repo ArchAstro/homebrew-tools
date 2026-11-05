@@ -1,8 +1,8 @@
 class Archdev < Formula
   desc "CLI for building and running with ArchDev"
   homepage "https://github.com/ArchAstro/archdev"
-  version "0.56.8"
-  license :cannot_represent
+  version "0.58.0"
+  license "MIT"
 
   livecheck do
     url :stable
@@ -11,28 +11,29 @@ class Archdev < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.56.8/archdev-darwin-arm64.tar.gz"
-      sha256 "8e7bade87a08826c442621562867a846ff32f6032aed4e2e37e04abf79987553"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.58.0/archdev-darwin-arm64.tar.gz"
+      sha256 "799e0c7dad5e448fa258c8c5b9f2b252c27a2ea8594fc9dc469847424a39fab2"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.56.8/archdev-darwin-x64.tar.gz"
-      sha256 "f2306798b2428a31bf028f76fba45fffefd2c2ff400ff03281203f4fff28ae31"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.58.0/archdev-darwin-x64.tar.gz"
+      sha256 "c2f364364fc21861ab26e85c8abdd099f9ec70db4845a2c1be04831d4b0bd249"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.56.8/archdev-linux-arm64.tar.gz"
-      sha256 "4501076d4f913fb4bf347e2af993d1967aa033c21944b919e9a9b7fec610fb65"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.58.0/archdev-linux-arm64.tar.gz"
+      sha256 "9dc168210f3c26886c4bddf0381d316dfa6f6d8a25cfbce68d36704d01ce651e"
     end
     on_intel do
-      url "https://github.com/ArchAstro/archdev/releases/download/v0.56.8/archdev-linux-x64.tar.gz"
-      sha256 "2a0cd785c620e51787f25ed44bf55eac1931ebd7f101b6d1221ef898c26e1e72"
+      url "https://github.com/ArchAstro/archdev/releases/download/v0.58.0/archdev-linux-x64.tar.gz"
+      sha256 "6da2bbaab1f995aef16b80fcfebd268c5a432274ecee93d34421a7f0bc1609cc"
     end
   end
 
   def install
     bin.install "archdev"
+    doc.install "THIRD_PARTY_NOTICES.md"
     generate_completions_from_executable(bin/"archdev", "completion")
   end
 
