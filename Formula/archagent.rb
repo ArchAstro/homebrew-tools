@@ -1,7 +1,7 @@
 class Archagent < Formula
   desc "ArchAstro agent platform CLI (org mode)"
   homepage "https://github.com/ArchAstro/archastro-cli"
-  version "0.61.1"
+  version "0.61.2"
   license "MIT"
 
   livecheck do
@@ -11,30 +11,31 @@ class Archagent < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.61.1/archagent-darwin-arm64.tar.gz"
-      sha256 "d744e80d06c1bbfe391ee1b736f8cb8b3506c82b4faebbc9882f1dbeb1db784f"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.61.2/archagent-darwin-arm64.tar.gz"
+      sha256 "9284f923200ac509d58b92fcf76fd12db92124a774959ef7e3983840f0c4c228"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.61.1/archagent-darwin-x64.tar.gz"
-      sha256 "ca03aa67cb8b37b1e82168391ec42da63ecfda2fd3f93b3bf10eb6fcc7c05fc0"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.61.2/archagent-darwin-x64.tar.gz"
+      sha256 "b54bb9ea6cdf38496f0af45cb727d191aa1b063bcf9e6dcfd943e8809439cb54"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.61.1/archagent-linux-arm64.tar.gz"
-      sha256 "d83b8a6fe9c4f4b88de5f65a0a9896981b77d20a6e01f7878f4ab39bf2664872"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.61.2/archagent-linux-arm64.tar.gz"
+      sha256 "a2ed52c206cae8739b696c7c22e60f069dab393ebca3da09c9755dd2356a9445"
     end
 
     on_intel do
-      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.61.1/archagent-linux-x64.tar.gz"
-      sha256 "56e14c70814f49ab9476d10a12817fc936ba44cee6045e070970081acdc7edab"
+      url "https://github.com/ArchAstro/archastro-cli/releases/download/v0.61.2/archagent-linux-x64.tar.gz"
+      sha256 "22db74b713a0475e0aa0596be77e49067e746e6eb2a1ef984c7514530eec2005"
     end
   end
 
   def install
     bin.install "archagent"
+    doc.install "THIRD_PARTY_NOTICES.md" if File.exist?("THIRD_PARTY_NOTICES.md")
     generate_completions_from_executable(bin/"archagent", "completion")
   end
 
